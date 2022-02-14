@@ -130,7 +130,7 @@ This score is good, but not ideal. It should be higher to be able to confidently
 As in the Random Forest the num_voted_users feature is also in other algorithms is the main feature, so the number of people who voted for the movie influences the movie success. In general the popularity, of the film and of his actors, seems to be the mean to make a successful movie.
 
 ## Authors
-This project has been developed by **Gazaleh Amini**,  **Yaba Meliane Epiphanie Ayebah** and **Sara Layachi**, as assignment of the 'Programming(Python)' course of University of Milano.
+This project has been developed by **Gazaleh Amini**,  **Yaba Meliane Epiphanie Ayebah** and **Sara Layachi**, as assignment of the 'Programming(Python)' course of University of Milan.
 
 ## References
 - https://www.kaggle.com/carolzhangdc/imdb-5000-movie-dataset
