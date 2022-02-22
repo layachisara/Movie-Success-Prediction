@@ -72,42 +72,44 @@ IMDB Score distribution
 
 ## Data Preprocessing
 ### Target Variable
-Categorising the target varible  in such a way that IMDB score between 1 and 5 is FLOP , between 5 and 7 is AVG, between 7 and 10 is HIT.
+Categorizing the target variable in such a way that the IMDB score between 1 and 5 is FLOP, between 5 and 7 is AVG, between 7 and 10 is HIT.
 
 Movies distribution
 ![](images/imdb_score_binned.png)
 ### Missing Values
-Every datset have some missing values, all the samples that having missing values are dropped
+Every dataset has some missing values, all the samples that have missing values are dropped
 ### Duplicates Values
 All duplicates are dropped
 ### Categorical Data
-All the categorical columns and the columns with text data are being Label Encodeded using LabelEncoder from Sklearn library
+All the categorical columns and the columns with text data are being Label Encoded using LabelEncoder from Sklearn library
 
 ### Correlation
-To find out whether there is any relation between variables, or multicollineariaty, we plot the correlationa matrix.Then we define a function to remove variables having High Collinearity.
+To find out whether there is any relation between variables, or multicollinearity, we plot the correlation matrix. Then, we define a function to remove variables having High Collinearity.
 
 matrix without multicollineariaty
 ![](images/corr.png)
 
 ## Classification Model Building
 ### Data Split
-Splitting the data into X and y where X contains Indepentent variables and y contain Target/Dependent variable.
+Splitting the data into X and y where X contains independent variables and y contain Target/Dependent variable.
 ### Train Test Split
-The train-test split is a technique for evaluating the performance of a machine learning algorithm, the dataset is divided into two subsets :
+The train-test split is a technique for evaluating the performance of a machine learning algorithm, the dataset is divided into two subsets:
 Train subset: used to fit the machine learning model
 Test subset: used to evaluate the fit machine learning model.
-Splitting the dataset into 70:30 (Train:Test) ratio using the test_train_split function in Sklearn library
+Splitting the dataset into 70:30 (Train:Test) ratio using the test_train_split function in Sklearn library.
 ### Feature Scaling
 Feature scaling is used to normalize the range of independent features of data.
 Standardization: Standardize features by removing the mean and scaling to unit variance.
 The standard score of a sample x is calculated as:
 z = (x - u) / s
 where u is the mean of the training subset, and s is the standard deviation of the training subset.
+
 ### Feature Selection
 Feature selection is the process of reducing the number of independent features to reduce the computational cost of modeling and to improve the performance of the model.
-The aim is to develop a trained machine learning model with the minimal required feature and which can predict the data points with acceptable accuracy.
+The aim is to develop a trained machine learning model with the minimal required feature, and which can predict the data points with acceptable accuracy.
 
-Recursive Feature Elimination Cross-Validated (RFECV) feature selection: in selecting the optimal number of features, the estimator is trained and the features are selected via the coefficients, or via the feature importances. The least important features are removed. This process is repeated recursively until the optimal number of features is obtained.
+Recursive Feature Elimination Cross-Validated (RFECV) feature selection: in selecting the optimal number of features, the estimator is trained, and the features are selected via the coefficients, or via the feature importance. The least important features are removed. This process is repeated recursively until the optimal number of features is obtained.
+
 
 Feature importance for Random Forest:
 ![](images/feature_importance.png)
@@ -123,11 +125,11 @@ Feature importance for Random Forest:
 |Naive Bayes|0.67|
 
 ## Conclusion
-The Random Forest algorithm yielded the best accuracy.
+The Random Forest algorithm yielded the best accuracy.This score is good, but not ideal. It should be higher to be able to confidently predict a movie’s success.
 
-This score is good, but not ideal. It should be higher to be able to confidently predict a movie’s success.
+The dataset is imbalanced, on Flop is predicting worse.
 
-As in the Random Forest the num_voted_users feature is also in other algorithms is the main feature, so the number of people who voted for the movie influences the movie success. Generally, the popularity, of the film and of its actors, seems to be the mean to make a successful movie.
+A More detailed analysis and optimization of the features could enhance the quality of the prediction.
 
 
 ## Authors
