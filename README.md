@@ -1,5 +1,5 @@
 # Movie Success Prediction
-A machine learning application to predict movie success. A movie's success can be interpreted in various ways, here we're considering the IMDB rating as a metrics of success. In particolary instead of just IMDB score, with the help of other parameters we're going to predict whether a movie is Hit, Avg or Flop.
+A machine learning application to predict movie success. A movie's success can be interpreted in various ways, here we're considering the IMDB rating as a metric of success. Particularly, instead of just IMDB score, with the help of other parameters we are going to predict whether a movie is Hit, Average (Avg) or Flop.
 
 |IMDB Score|	Classify|
 | :---   | :---  |
@@ -8,7 +8,7 @@ A machine learning application to predict movie success. A movie's success can b
 |7-10|Hit Movie|
 
 ## Table of contents:
-- [Data  Description](#data-description)
+- [Data Description](#data-description)
 - [Data Exploration](#data-exploration)
 - [Data Preprocessing](#data-preprocessing)
   - [Target Variable](#target-variable)
@@ -27,7 +27,7 @@ A machine learning application to predict movie success. A movie's success can b
 - [References](#refernces)
 
 ## Data Description
-The dataset is from Kaggle website (IMDb 5000 Movie Dataset). It contains 28 variables for 5043 movies, spanning across 100 years in 66 countries. There are 2399 unique director names, and thousands of actors/actresses. “imdb_score” is the response variable while the other 27 variables are possible predictors.
+The dataset is from Kaggle website (IMDb 5000 Movie Dataset). It contains 28 variables for 5043 movies, spanning across 100 years in 66 countries. There are 2399 unique director names, and thousands of actors/actresses. The “imdb_score” is the response variable while the other 27 variables are possible predictors.
 
 |Column Name | Description|
 | :---   | :---  |
@@ -127,7 +127,8 @@ The Random Forest algorithm yielded the best accuracy.
 
 This score is good, but not ideal. It should be higher to be able to confidently predict a movie’s success.
 
-As in the Random Forest the num_voted_users feature is also in other algorithms is the main feature, so the number of people who voted for the movie influences the movie success. In general the popularity, of the film and of his actors, seems to be the mean to make a successful movie.
+As in the Random Forest the num_voted_users feature is also in other algorithms is the main feature, so the number of people who voted for the movie influences the movie success. Generally, the popularity, of the film and of its actors, seems to be the mean to make a successful movie.
+
 
 ## Authors
 This project has been developed by **Gazaleh Amini**,  **Yaba Meliane Epiphanie Ayebah** and **Sara Layachi**, as assignment of the 'Programming(Python)' course of University of Milan.
