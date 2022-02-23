@@ -133,7 +133,7 @@ A More detailed analysis and optimization of the features could enhance the qual
 
 
 ## Authors
-This project has been developed by **Gazaleh Amini**,  **Yaba Meliane Epiphanie Ayebah** and **Sara Layachi**, as assignment of the 'Programming(Python)' course of University of Milan.
+This project has been developed by **Ghazaleh Amini**,  **Yaba Meliane Epiphanie Ayebah** and **Sara Layachi**, as assignment of the 'Programming(Python)' course of University of Milan.
 
 ## References
 - https://www.kaggle.com/carolzhangdc/imdb-5000-movie-dataset
